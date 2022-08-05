@@ -24,7 +24,7 @@ public class Virtual_Dice_Roller_TC extends base{
 	{
 		Virtual_Dice_Roller_PO vdr = new Virtual_Dice_Roller_PO(driver);
 		
-		vdr.mover(10,"18");
+		vdr.mover(20,"5");
 	}
 	@AfterMethod
 	public  void TearDown()

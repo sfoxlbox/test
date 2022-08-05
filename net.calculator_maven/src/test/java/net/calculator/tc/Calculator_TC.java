@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import net.calculator.base;
 import net.calculator.po.Calculator_PO;
+import net.calculator.po.Fitness_PO;
 
 public class Calculator_TC extends base {
 WebDriver driver;
@@ -24,6 +25,7 @@ WebDriver driver;
 	for (int x =0; x<1; x++)	
 	{
 		Calculator_PO poc = new Calculator_PO(driver);
+		Fitness_PO Fit = new Fitness_PO(driver);
 		
 		poc.calculator(2,3,1);	
 		poc.calculator(2,3,2);	

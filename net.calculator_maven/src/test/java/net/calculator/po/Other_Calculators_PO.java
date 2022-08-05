@@ -51,7 +51,7 @@ WebDriver driver;
 		Thread.sleep(800);
 		System.out.println("Title of the Page :"+Title2.getText());
 		driver.navigate().back();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		}
 	} 
 }

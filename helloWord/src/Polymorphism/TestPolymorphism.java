@@ -6,8 +6,8 @@ public class TestPolymorphism {
 		// TODO Auto-generated method stub
 
 		Overloading Overloading = new Overloading();
-		Overloading.add(1, 5, 7);
-		Overloading.add(4, 6);
+		Overloading.add(1, 5);
+		Overloading.add(4, 6, 5);
 		Overloading.add("Bill ","Bob ","Well ");
 		
 		

@@ -49,6 +49,8 @@ WebDriver driver;
 		wait.until(ExpectedConditions.visibilityOf(calculator));
 		// click on symbols
 		calculator.click();
+		
+		Thread.sleep(2000);
 		System.out.print(calculator.getText()+ " ");
 		
 	}
@@ -87,7 +89,7 @@ WebDriver driver;
 		SoftAssert sa = new SoftAssert();
 		Logo.isDisplayed();
 		Point logo = Logo.getLocation();
-		System.out.println(Logo.getLocation());
+		System.out.println(logo);
 		sa.assertEquals(Logo.getLocation(), logo );
 		System.out.println("Logo" + Logo.getLocation() + " location is Verified");
 		Logo.getText();

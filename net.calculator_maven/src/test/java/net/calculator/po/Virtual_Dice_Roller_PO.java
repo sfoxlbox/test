@@ -42,20 +42,26 @@ WebDriver driver;
 		js.executeScript("window.scrollBy(0,80)", "");
 		lenrange.getTagName();
 		lenrange.isSelected();
+		Thread.sleep(2000);
 		lennumber.click();
 		lennumber.clear();
+		Thread.sleep(2000);
 		lennumber.sendKeys(Keys.BACK_SPACE);
+		Thread.sleep(2000);
 		lennumber.sendKeys(y);
+		Thread.sleep(2000);
 		Thread.sleep(500);
 		lennumber.sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
 		Thread.sleep(500);
 		lennumber.clear();
+		Thread.sleep(2000);
 		
 		for (int z =0; z<x; z++ )
 		{
 			Thread.sleep(500);
 			 lenrange.sendKeys(Keys.RIGHT);
-			Thread.sleep(100);
+			 Thread.sleep(2000);
 			submit1.click();
 			js.executeScript("window.scrollBy(0,15)", "");
 		}

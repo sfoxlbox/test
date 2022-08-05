@@ -23,8 +23,6 @@ public class Main_Financial_PO {
 	}
 		@FindBy (how =How.XPATH, using= "/html[1]/body[1]/div[3]/div[1]/h1[1]")
 		WebElement Title2;
-		
-		
 	
 		
 		public void links() throws InterruptedException 
