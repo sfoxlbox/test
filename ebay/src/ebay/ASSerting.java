@@ -50,6 +50,7 @@ public class ASSerting extends Base{
 		public void gmailtest()
 		{
 		boolean text = driver.findElement(By.linkText("Gmail")).isDisplayed();
+		System.out.println(text);
 		}
 		
 		@AfterMethod
