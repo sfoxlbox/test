@@ -7,7 +7,7 @@ public class springmutable {
 
 		StringBuffer sbr = new StringBuffer("facebook");
 		
-		sbr.append("is Blue");
+		sbr.append(" is Blue");
 		System.out.println(sbr);
 		
 		sbr.delete(2, 5); // delete index from String

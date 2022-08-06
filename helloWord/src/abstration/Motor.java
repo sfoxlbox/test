@@ -3,7 +3,7 @@ package abstration;
 public class Motor implements Car {
 
 	public void carShape() {
-		System.out.println("Motor");
+		System.out.println("this is a Motor");
 	}
 	public void start() {
 		System.out.println("Lets start");

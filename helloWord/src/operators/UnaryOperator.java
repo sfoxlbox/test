@@ -7,10 +7,10 @@ public class UnaryOperator {
 		
 		int i = 3;
 		i++;  //incrementing 
-		System.out.println(i);
+		System.out.println(" I++ is : "+ i);
 		++i;
-		System.out.println(i);
-		System.out.println(++i);
+		System.out.println( " ++I is : " + i);
+		System.out.println(" ++I is plus one : " + ++i);
 		int j =3;
 		--j; //decrementing
 		int k = 3;
@@ -22,9 +22,9 @@ public class UnaryOperator {
 		System.out.println(++k);
 		
 		int result = +1;
-		System.out.println(result);
-		System.out.println(++result);
-		System.out.println(--result); 
+		System.out.println("result is "+ result);
+		System.out.println("++result is "+ ++result);
+		System.out.println("--result is "+ --result); 
 		
 		boolean x = false;
 		System.out.println(x);
