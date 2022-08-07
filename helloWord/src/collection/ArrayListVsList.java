@@ -29,7 +29,8 @@ public class ArrayListVsList {
 		List<String> list2 = new ArrayList<String>();
 	      for(String text:array) {
 	         list2.add(text);}
-		System.out.println(list2.get(0));
+	      System.out.println(array[2]); 
+		System.out.println(list2);
 		
 		List <Integer> arraylist = new ArrayList<>();
 		

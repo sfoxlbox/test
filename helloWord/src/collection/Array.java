@@ -23,7 +23,7 @@ public class Array {
 		System.out.println("");
 		System.out.println("Their names are : ");
 		for(int x = 0 ; x < num; x++ ) { // print array using x 
-		System.out.println("-" + Friends);
+		System.out.println("-" + Friends[x]);
 		
 		}}}
 

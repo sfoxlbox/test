@@ -27,8 +27,8 @@ WebDriver driver;
 		//JavascriptExecutor js = (JavascriptExecutor)driver;
 		
 		//Actions action = new Actions(driver);
-		 List<WebElement> elements = driver.findElements(By.className("NGvuW"));
-		    System.out.println("Number of elements:" +elements.size());
+		 List<WebElement> elements = driver.findElements(By.tagName("a"));
+		    System.out.println("Number of elements:" + elements.size());
 		for ( WebElement e : elements) {
 			System.out.println(e.getText());
 		}

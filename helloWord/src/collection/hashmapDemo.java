@@ -9,9 +9,9 @@ public class hashmapDemo {
 		// TODO Auto-generated method stub
 
 		HashMap<String, String> map = new HashMap<String, String>();
-		
-		map.put("Blue", "x");  // blue is key and x is value
-		map.put("Red", "y");   
+		String arr1[][] = {{"A","B","C","D"},{"Aa","Bb","Cc","Dd"},{"Aaa","Bbb","Ccc","Ddd"},{"A1","B1","C1","D1"},{"A2","B2","C2","D2"}};
+		map.put(arr1[0][1], "x");  // blue is key and x is value
+		map.put(arr1[1][0], "y");   
 		map.put("Orange", "z");
 		
 		System.out.println(map);
@@ -31,8 +31,8 @@ public class hashmapDemo {
         }
        System.out.println();
 		if ( map.containsKey("Blue")) {
-			String Blue = map.get("Blue");			
-			System.out.println("The value of Blue is : "+  Blue); // we can get values from keys.
+			String blue = map.get(arr1[0][1]);			
+			System.out.println("The value of Blue is : "+  blue); // we can get values from keys.
 		}
 		System.out.println();
 		if ( map.containsValue("x")) {
