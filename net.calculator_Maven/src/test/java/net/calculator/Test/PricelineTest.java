@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import net.calculator.base;
 import net.calculator.po.Priceline_Po;
 
-public class GoogleTest extends base{
+public class PricelineTest extends base{
 WebDriver driver;
 	
 	@BeforeMethod

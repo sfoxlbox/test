@@ -23,7 +23,7 @@ WebDriver driver;
 	{
 		Least_Common_Multiple_PO Other = new Least_Common_Multiple_PO(driver);
 		
-		Other.infulltxarea("445","448","78", "559", "55");
+		Other.infulltxarea("445","448","78", "559");
 	}
 	@AfterMethod
 	public  void TearDown()

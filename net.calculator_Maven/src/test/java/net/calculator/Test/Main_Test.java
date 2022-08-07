@@ -2,13 +2,10 @@ package net.calculator.Test;
 
 import java.io.IOException;
 
-import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.junit.runners.Parameterized;
-
 import net.calculator.base;
 import net.calculator.po.Financial_PO;
 import net.calculator.po.Fitness_PO;
@@ -134,7 +131,7 @@ public class Main_Test extends base{
 	{
 		Least_Common_Multiple_PO Other = new Least_Common_Multiple_PO(driver);
 		driver.get("https://www.calculator.net/lcm-calculator.html");
-		Other.infulltxarea("112","885","74", "77", "555");
+		Other.infulltxarea("112","885","74", "77");
 	}
 	@Test(priority = 10)
 	public void Test_Virtual_Dice_Roller() throws InterruptedException 

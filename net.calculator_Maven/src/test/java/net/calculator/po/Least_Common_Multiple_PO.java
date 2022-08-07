@@ -23,10 +23,10 @@ WebDriver driver;
 	@FindBy (how =How.XPATH, using= "/html[1]/body[1]/div[3]/div[1]/h1[1]")
 	WebElement Title2;
 	
-	public void infulltxarea(String i,String j , String k, String l, String f) throws InterruptedException
+	public void infulltxarea(String i,String j , String k, String l) throws InterruptedException
 	{
 
-		String [] array= new String [] {i,j,k,l,f}; // array : 
+		String [] array= new String [] {i,j,k,l}; // array : 
 		
 		//List <String> arraylist = new ArrayList<>();
 		
@@ -36,7 +36,7 @@ WebDriver driver;
 		Thread.sleep(2000);
 		infulltxarea.isDisplayed();
 		
-		for(int t =0; t<6; t++)
+		for(int t =0; t<4; t++)
 		{
 		infulltxarea.sendKeys(array[t]);
 		infulltxarea.sendKeys(",");
