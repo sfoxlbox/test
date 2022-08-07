@@ -22,6 +22,7 @@ WebDriver driver;
 	
 	public void links() throws InterruptedException
 	{
+		System.out.println(driver.getTitle());
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,400)", "");
 		for (int x =1; x<7;x++)

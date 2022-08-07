@@ -15,6 +15,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.w3c.dom.html.HTMLLinkElement;
 
 import net.calculator.base;
 
@@ -31,8 +32,10 @@ WebDriver driver;
 		
 		
 		
+		@SuppressWarnings("unused")
 		public void links() throws InterruptedException
 		{
+			System.out.println(driver.getTitle());
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 			//js.executeScript("window.scrollBy(0,200)", "");
 			Thread.sleep(500);
@@ -41,26 +44,37 @@ WebDriver driver;
 			for (int x =1; x<30;x++)
 			{
 				try{
-				WebElement link = driver.findElement(By.xpath("//tbody/tr[1]/td[1]/div["+x+"]/a[1]"));
-				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			    
 				driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
+				WebElement link = driver.findElement(By.xpath("//tbody/tr[1]/td[1]/div["+x+"]/a[1]"));
 				System.out.println("link is : "+link.getText());
-				Thread.sleep(2000);
 				js.executeScript("window.scrollBy(0,100)", "");
-				action.moveToElement(link).perform();
-				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//tbody/tr[1]/td[1]/div["+x+"]/a[1]")));
-				js.executeScript("arguments[0].click();", link);
+				Thread.sleep(800);
+				action.moveToElement(link).build().perform();
+				wait.getClass();
+				Thread.sleep(800);
+				if (link != null) {
+					driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+					link.click();
+				}else if (link == null) {
+					driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+					action.moveToElement(link).build().perform();
+					link.click();
+				}
 				Thread.sleep(500);
-				driver.navigate().back();
+				driver.get("https://www.calculator.net/financial-calculator.html");
+				
 				
 				
             }
 			
 			
 	        catch ( Exception e) {
+	        	driver.close();
 	        	driver = setproperty();
 	        	driver.get("https://www.calculator.net/financial-calculator.html");
-	        	action.sendKeys(Keys.F5);
+	        	
 	        	Thread.sleep(1000);
 	        	
 	        	}}
@@ -72,12 +86,17 @@ WebDriver driver;
 			link.getText();
 			action.sendKeys(Keys.F5);
 			action.sendKeys(Keys.F5);
-			Thread.sleep(2000);
+			Thread.sleep(500);
 			wait.until(ExpectedConditions.visibilityOf(link));
 			System.out.println("link is : "+link.getText());
 			js.executeScript("window.scrollBy(0,100)", "");
-			js.executeScript("arguments[0].click();", link);
-			Thread.sleep(1000);
+			if (link != null) {
+				link.click();
+			}else if (link == null) {
+				action.sendKeys(Keys.F5);
+				link.click();
+			}
+			Thread.sleep(500);
 			driver.navigate().back();
 			Thread.sleep(500);
 			

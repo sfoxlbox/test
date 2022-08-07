@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
@@ -23,14 +24,18 @@ WebDriver driver;
 	@FindBy (how =How.XPATH, using= "/html[1]/body[1]/div[3]/div[1]/h1[1]")
 	WebElement Title2;
 	
+	
 	public void images() throws InterruptedException
 	{
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		
 		for (int x =1; x<5;x++)
 		{
 		WebElement images = driver.findElement(By.xpath("//body[1]/div[4]/div[1]/table[1]/tbody[1]/tr[1]/td["+x+"]/div[1]/a"));
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOf(images));
-		images.click();
+		Actions action = new Actions(driver);
+		
 		String text;
 		switch (x) {
 		case 1 : text ="Financial Calculators";
@@ -43,6 +48,9 @@ WebDriver driver;
 		break;
 		default: text = "fix"; 
 		}
+		
+		images.click();
+		
 		Assert.assertEquals(Title2.getText(),text );
 		System.out.println("Picture "+x+ " is displayed");
 		Thread.sleep(2000);

@@ -26,8 +26,10 @@ WebDriver driver;
 	@FindBy (how =How.XPATH, using= "/html[1]/body[1]/div[3]/div[1]/h1[1]")
 	WebElement Title2;
 	
+	@SuppressWarnings("unused")
 	public void links() throws InterruptedException
 	{
+		System.out.println(driver.getTitle());
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,400)", "");
 		
@@ -79,7 +81,14 @@ WebDriver driver;
 		default: text = "fix";
 		}
 		Assert.assertEquals(link.getText(),text );
-		link.click();
+		if (link != null) {
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+			link.click();
+		}else if (link == null) {
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+			action.moveToElement(link).build().perform();
+			link.click();
+		}
 		System.out.println("link "+text+ " is verified");
 		Thread.sleep(500);
 		System.out.println("Title of the Page :"+Title2.getText());

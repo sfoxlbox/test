@@ -25,7 +25,7 @@ WebDriver driver;
 	
 	public void infulltxarea(String i,String j , String k, String l) throws InterruptedException
 	{
-
+		System.out.println(driver.getTitle());
 		String [] array= new String [] {i,j,k,l}; // array : 
 		
 		//List <String> arraylist = new ArrayList<>();

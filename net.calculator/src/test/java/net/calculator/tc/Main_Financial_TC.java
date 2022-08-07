@@ -33,7 +33,7 @@ public class Main_Financial_TC extends base{
 	@AfterMethod
 	public  void TearDown() 
 	{
-		driver.close();
+		
 		driver.quit();
 		
 	}

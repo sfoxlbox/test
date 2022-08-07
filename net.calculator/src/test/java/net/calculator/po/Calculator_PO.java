@@ -44,9 +44,10 @@ WebDriver driver;
 	public void calculator(int x,int y,int z) throws InterruptedException
 	{
 		
+		System.out.println(driver.getTitle());
 		WebElement calculator = driver.findElement(By.xpath("//tbody/tr[2]/td["+x+"]/div[1]/div["+y+"]/span["+z+"]"));
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.invisibilityOf(calculator));
+		wait.until(ExpectedConditions.visibilityOf(calculator));
 		calculator.click();
 		System.out.print(calculator.getText()+ " ");
 		
