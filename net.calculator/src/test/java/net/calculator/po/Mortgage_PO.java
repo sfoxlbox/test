@@ -150,7 +150,7 @@ WebDriver driver;
 				System.out.println("---------------------------------");
 			}
 			System.out.println(Monthly_Payment.getText());
-			Assert.assertEquals(Monthly_Payment.getText(), "Monthly Pay:   $2,070.86");
+			Assert.assertEquals(Monthly_Payment.getText(), "Monthly Pay:   $2,563.92");
 			
 			for (int x=0; x< 2; x++) {
 				System.out.println("---------------------------------");

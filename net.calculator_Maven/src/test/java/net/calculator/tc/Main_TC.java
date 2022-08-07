@@ -2,10 +2,12 @@ package net.calculator.tc;
 
 import java.io.IOException;
 
+import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.junit.runners.Parameterized;
 
 import net.calculator.base;
 import net.calculator.po.Financial_PO;
@@ -20,7 +22,7 @@ import net.calculator.po.Virtual_Dice_Roller_PO;
 import net.calculator.po.unsplash_PO;
 
 
-
+//@RunWith(Parameterized.class)
 public class Main_TC extends base{
 
 	WebDriver driver;

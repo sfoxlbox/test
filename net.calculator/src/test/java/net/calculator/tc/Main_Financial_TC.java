@@ -23,12 +23,11 @@ public class Main_Financial_TC extends base{
 		driver.get("https://www.calculator.net/financial-calculator.html");
 		
 	}
-	@SuppressWarnings("deprecation")
 	@Test
 	public void Test_all_Links() throws InterruptedException 
 	{
 		Main_Financial_PO all = new Main_Financial_PO(driver);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.MILLISECONDS);
+		
 		all.links();
 	}
 	@AfterMethod

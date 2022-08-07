@@ -1,12 +1,18 @@
 package net.calculator.po;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class Financial_PO {
@@ -29,6 +35,11 @@ WebDriver driver;
 		for (int x =1; x<16;x++)
 		{
 		WebElement link = driver.findElement(By.xpath("//tbody/tr[1]/td[1]/ul[1]/li["+x+"]/a"));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.F5);
+		action.sendKeys(Keys.F5);
+		wait.until(ExpectedConditions.visibilityOf(link));
 		link.getText();
 		System.out.println("link is : "+link.getText());
 		String text;

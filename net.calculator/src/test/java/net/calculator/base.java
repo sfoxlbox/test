@@ -1,5 +1,6 @@
 package net.calculator;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -17,7 +18,7 @@ public class base {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.MINUTES);
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 			return driver;
 			
 		}

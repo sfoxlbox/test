@@ -1,11 +1,15 @@
 package net.calculator.po;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class Images_PO {
@@ -24,7 +28,8 @@ WebDriver driver;
 		for (int x =1; x<5;x++)
 		{
 		WebElement images = driver.findElement(By.xpath("//body[1]/div[4]/div[1]/table[1]/tbody[1]/tr[1]/td["+x+"]/div[1]/a"));
-		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOf(images));
 		images.click();
 		String text;
 		switch (x) {
@@ -43,7 +48,7 @@ WebDriver driver;
 		Thread.sleep(2000);
 		System.out.println("Title is :"+Title2.getText());
 		driver.navigate().back();
-		Thread.sleep(2000);
+		
 		}
 	}
 }

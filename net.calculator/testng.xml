@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="10" name="Test">
+    <classes>
+      <class name="net.calculator.tc.Other_Calculators_TC"/>
+      <class name="net.calculator.tc.Financial_TC"/>
+      <class name="net.calculator.tc.Fitness_TC"/>
+      <class name="net.calculator.tc.Calculator_TC"/>
+      <class name="net.calculator.tc.Math_TC"/>
+      <class name="net.calculator.tc.Virtual_Dice_Roller_TC"/>
+      <class name="net.calculator.tc.Main_Financial_TC"/>
+      <class name="net.calculator.tc.Mortgage_TC"/>
+      <class name="net.calculator.tc.images_TC"/>
+      <class name="net.calculator.tc.Main_TC"/>
+      <class name="net.calculator.tc.Least_Common_Multiple_TC"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

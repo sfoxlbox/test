@@ -1,5 +1,7 @@
 package net.calculator.po;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class Calculator_PO {
@@ -41,7 +45,8 @@ WebDriver driver;
 	{
 		
 		WebElement calculator = driver.findElement(By.xpath("//tbody/tr[2]/td["+x+"]/div[1]/div["+y+"]/span["+z+"]"));
-		Thread.sleep(500);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.invisibilityOf(calculator));
 		calculator.click();
 		System.out.print(calculator.getText()+ " ");
 		
