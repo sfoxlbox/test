@@ -1,4 +1,4 @@
-package net.calculator.tc;
+package net.calculator.Test;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import net.calculator.base;
 import net.calculator.po.Loan_Calculator_PO;
 
-public class Loan_Calculator_TC extends base{
+public class Loan_CalculatorTest extends base{
 WebDriver driver;
 	
 	@BeforeMethod

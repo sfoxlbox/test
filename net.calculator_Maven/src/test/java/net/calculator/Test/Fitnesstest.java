@@ -1,4 +1,5 @@
-package net.calculator.tc;
+package net.calculator.Test;
+
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -6,9 +7,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import net.calculator.base;
-import net.calculator.po.Images_PO;
+import net.calculator.po.Fitness_PO;
+;
 
-public class images_TC extends base{
+public class Fitnesstest extends base{
 WebDriver driver;
 	
 	@BeforeMethod
@@ -18,17 +20,15 @@ WebDriver driver;
 		driver.get("https://www.calculator.net/");
 	}
 	@Test
-	public void Test_Images() throws InterruptedException 
+	public void Test_location() throws InterruptedException 
 	{
-		Images_PO images = new Images_PO(driver);
+		Fitness_PO Fitness = new Fitness_PO(driver);
 		
-		images.images();
-		
+		Fitness.links();
 	}
 	@AfterMethod
-	public  void TearDown()
+	public  void TearDown() 
 	{
-		
 		driver.close();
 		driver.quit();
 		

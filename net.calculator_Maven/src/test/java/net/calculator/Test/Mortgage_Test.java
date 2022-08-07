@@ -1,4 +1,4 @@
-package net.calculator.tc;
+package net.calculator.Test;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import net.calculator.base;
 import net.calculator.po.Mortgage_PO;
 
-public class Mortgage_TC  extends base{
+public class Mortgage_Test  extends base{
 
 	WebDriver driver;
 	

@@ -1,4 +1,4 @@
-package net.calculator.tc;
+package net.calculator.Test;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -6,25 +6,24 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import net.calculator.base;
-import net.calculator.po.Math_PO;
+import net.calculator.po.Least_Common_Multiple_PO;
 
 
-
-public class Math_TC extends base{
+public class Least_Common_MultipleTest extends base{
 WebDriver driver;
 	
 	@BeforeMethod
 	public void Setup()
 	{
 		driver = setproperty();
-		driver.get("https://www.calculator.net/");
+		driver.get("https://www.calculator.net/lcm-calculator.html");
 	}
 	@Test
-	public void Test_Math() throws InterruptedException 
+	public void Test_Other() throws InterruptedException 
 	{
-		Math_PO Math = new Math_PO(driver);
+		Least_Common_Multiple_PO Other = new Least_Common_Multiple_PO(driver);
 		
-		Math.links();
+		Other.infulltxarea("445","448","78", "559", "55");
 	}
 	@AfterMethod
 	public  void TearDown()

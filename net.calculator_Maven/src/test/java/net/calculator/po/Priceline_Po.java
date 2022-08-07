@@ -9,11 +9,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class Screenshot_Po {
+public class Priceline_Po {
 WebDriver driver;
 	
 	
-	public Screenshot_Po(WebDriver driver) {  // creating constractor
+	public Priceline_Po(WebDriver driver) {  // creating constractor
 	this.driver = driver;            
 	PageFactory.initElements(driver, this); 
 	}
@@ -54,22 +54,7 @@ WebDriver driver;
 		action.moveToElement(Date).click().perform();
 		Thread.sleep(500);
 		
-		action.moveToElement(next).click().perform();
-		action.moveToElement(next).click().perform();
 		
-		Thread.sleep(800);
-		System.out.println(exactmonth.getText());
-		action.moveToElement(exactmonth).click().perform();
-		Thread.sleep(800);
-		action.moveToElement(date1).build().perform();
-		Thread.sleep(500);
-		action.moveToElement(date1).click().perform();
-		System.out.println(date1.getText());
-		Thread.sleep(500);
-		System.out.println(date2.getText());
-		action.moveToElement(date2).build().perform();
-		action.moveToElement(date2).click().perform();
-		//System.out.println(date2.getText());
 		Thread.sleep(500);
 		action.moveToElement(Cruises).click().perform();
 		Thread.sleep(500);

@@ -1,4 +1,4 @@
-package net.calculator.tc;
+package net.calculator.Test;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -9,7 +9,7 @@ import net.calculator.base;
 import net.calculator.po.Virtual_Dice_Roller_PO;
 
 
-public class Virtual_Dice_Roller_TC extends base{
+public class Virtual_Dice_Roller_Test extends base{
 
 	WebDriver driver;
 	

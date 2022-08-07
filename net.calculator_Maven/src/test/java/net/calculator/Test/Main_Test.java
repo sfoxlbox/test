@@ -1,4 +1,4 @@
-package net.calculator.tc;
+package net.calculator.Test;
 
 import java.io.IOException;
 
@@ -23,7 +23,7 @@ import net.calculator.po.unsplash_PO;
 
 
 //@RunWith(Parameterized.class)
-public class Main_TC extends base{
+public class Main_Test extends base{
 
 	WebDriver driver;
 	

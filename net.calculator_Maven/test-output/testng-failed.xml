@@ -3,13 +3,28 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="net.calculator.tc.Financial_TC">
+      <class name="net.calculator.tc.Main_TC">
         <methods>
+          <include name="Test_Finanial_Main"/>
           <include name="Setup"/>
-          <include name="Test_location"/>
+          <include name="Test_Least_Common_Multiple"/>
           <include name="TearDown"/>
         </methods>
-      </class> <!-- net.calculator.tc.Financial_TC -->
+      </class> <!-- net.calculator.tc.Main_TC -->
+      <class name="net.calculator.tc.google_TC">
+        <methods>
+          <include name="Setup"/>
+          <include name="Google_PO"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- net.calculator.tc.google_TC -->
+      <class name="net.calculator.tc.Least_Common_Multiple_TC">
+        <methods>
+          <include name="Setup"/>
+          <include name="Test_Other"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- net.calculator.tc.Least_Common_Multiple_TC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

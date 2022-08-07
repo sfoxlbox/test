@@ -1,4 +1,6 @@
-package net.calculator.tc;
+package net.calculator.Test;
+
+import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -6,26 +8,23 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import net.calculator.base;
-import net.calculator.po.Other_Calculators_PO;
+import net.calculator.po.unsplash_PO;
 
-
-
-public class Other_Calculators_TC extends base{
+public class Unsplash_Test extends base{
 	
 	WebDriver driver;
-	
 	@BeforeMethod
 	public void Setup()
 	{
 		driver = setproperty();
-		driver.get("https://www.calculator.net/");
+		driver.get("https://unsplash.com/");
 	}
 	@Test
-	public void Test_Other() throws InterruptedException 
+	public void Test() throws InterruptedException, IOException 
 	{
-		Other_Calculators_PO Other = new Other_Calculators_PO(driver);
+		unsplash_PO zz = new unsplash_PO(driver);
 		
-		Other.links();
+		zz.links("cat");
 	}
 	@AfterMethod
 	public  void TearDown()

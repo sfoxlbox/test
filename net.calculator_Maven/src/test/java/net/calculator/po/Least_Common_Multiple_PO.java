@@ -26,7 +26,7 @@ WebDriver driver;
 	public void infulltxarea(String i,String j , String k, String l, String f) throws InterruptedException
 	{
 
-		String [] array= new String [] {i,j,k,l}; // array : 
+		String [] array= new String [] {i,j,k,l,f}; // array : 
 		
 		//List <String> arraylist = new ArrayList<>();
 		
@@ -36,7 +36,7 @@ WebDriver driver;
 		Thread.sleep(2000);
 		infulltxarea.isDisplayed();
 		
-		for(int t =0; t<5; t++)
+		for(int t =0; t<6; t++)
 		{
 		infulltxarea.sendKeys(array[t]);
 		infulltxarea.sendKeys(",");
