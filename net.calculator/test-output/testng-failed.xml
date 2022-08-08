@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="net.calculator.tc.images_TC">
+      <class name="net.calculator.tc.Main_Financial_TC">
         <methods>
-          <include name="Setup"/>
-          <include name="Test_Images"/>
           <include name="TearDown"/>
+          <include name="Test_all_Links"/>
+          <include name="Setup"/>
         </methods>
-      </class> <!-- net.calculator.tc.images_TC -->
+      </class> <!-- net.calculator.tc.Main_Financial_TC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
