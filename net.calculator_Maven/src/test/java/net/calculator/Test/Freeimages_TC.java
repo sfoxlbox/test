@@ -15,7 +15,7 @@ WebDriver driver;
 	public void Setup()
 	{
 		driver = setproperty();
-		driver.get("https://calculator.net/");
+		driver.get("https://www.calculator.net/financial-calculator.html");
 	}
 	@Test
 	public void Test_location() throws InterruptedException 

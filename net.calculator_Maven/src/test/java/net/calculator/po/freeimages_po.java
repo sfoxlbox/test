@@ -24,14 +24,14 @@ import org.openqa.selenium.support.PageFactory;
    {
 	   List<WebElement> elements = driver.findElements(By.tagName("a"));
 	   HashSet<String> h_set = new HashSet<String>();
-	   HashMap<Integer, String> map = new HashMap<Integer, String>();
+	   HashMap<String, String> map = new HashMap<String, String>();
 	   String [] array = new String[elements.size()];
 	  
 	   
 	   for (WebElement e: elements){
 		   if(e.getText() != "") {
 			   h_set.add(e.getText());
-			   map.put(e.hashCode(), e.getText());
+			   map.put(e.getAccessibleName(), e.getText());
 			   //System.out.println(e.getText()); 
 		   }
 	   }
@@ -42,10 +42,10 @@ import org.openqa.selenium.support.PageFactory;
 		   System.out.println(array[x]);
 	   }
 	   System.out.println(h_set.size()); 
-	   for (Integer i : map.keySet()) { // get they values
+	   for (String i : map.keySet()) { // get they values
 			
  			System.out.println(i+ " "); 
 	
    }
-	   System.out.println(map.keySet().toString()); }}
+	   System.out.println(map.values()); }}
     
