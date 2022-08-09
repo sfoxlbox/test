@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-04T20:18:47 EDT" name="Default suite" finished-at="2022-08-04T20:18:50 EDT" duration-ms="3135">
+  <suite started-at="2022-08-08T12:30:07 EDT" name="Default suite" finished-at="2022-08-08T12:30:10 EDT" duration-ms="3454">
     <groups>
     </groups>
-    <test started-at="2022-08-04T20:18:47 EDT" name="Default test" finished-at="2022-08-04T20:18:50 EDT" duration-ms="3135">
+    <test started-at="2022-08-08T12:30:07 EDT" name="Default test" finished-at="2022-08-08T12:30:10 EDT" duration-ms="3454">
       <class name="Test_TC.Math_TC">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:Test_TC.Math_TC@4cc451f2]" started-at="2022-08-04T20:18:47 EDT" name="Setup" finished-at="2022-08-04T20:18:50 EDT" duration-ms="3044" status="FAIL">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Test_TC.Math_TC@12468a38]" started-at="2022-08-08T12:30:07 EDT" name="Setup" finished-at="2022-08-08T12:30:10 EDT" duration-ms="3345" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -119,7 +119,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="Test_Math()[pri:0, instance:Test_TC.Math_TC@4cc451f2]" started-at="2022-08-04T20:18:50 EDT" name="Test_Math" finished-at="2022-08-04T20:18:50 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="Test_Math()[pri:0, instance:Test_TC.Math_TC@12468a38]" started-at="2022-08-08T12:30:10 EDT" name="Test_Math" finished-at="2022-08-08T12:30:10 EDT" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -231,7 +231,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_Math -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:Test_TC.Math_TC@4cc451f2]" started-at="2022-08-04T20:18:50 EDT" name="TearDown" finished-at="2022-08-04T20:18:50 EDT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Test_TC.Math_TC@12468a38]" started-at="2022-08-08T12:30:10 EDT" name="TearDown" finished-at="2022-08-08T12:30:10 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

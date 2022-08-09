@@ -6,8 +6,8 @@
       <class name="Test_TC.Math_TC">
         <methods>
           <include name="TearDown"/>
-          <include name="Setup"/>
           <include name="Test_Math"/>
+          <include name="Setup"/>
         </methods>
       </class> <!-- Test_TC.Math_TC -->
     </classes>
