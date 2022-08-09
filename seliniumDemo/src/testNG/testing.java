@@ -78,15 +78,15 @@ public class testing {
 	public void gtest2() throws IOException, InterruptedException {
 		System.out.println("Gmail login 1");
 		driver.navigate().to("https://www.perfectvape.com/");
-		Thread.sleep(800);
+		Thread.sleep(2000);
 		String handler = driver.getCurrentUrl();
 		System.out.println(handler);
 		
 		driver.findElement(By.cssSelector("#ac-ag-accept-button-text")).click();
-		Thread.sleep(800);
+		Thread.sleep(2000);
 		//File srcFile3 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
-		Thread.sleep(800);
+		Thread.sleep(2000);
 		WebElement element  = driver.findElement(By.cssSelector("img[class='header-logo-image']"));
 		//File srcFile4 = ((TakesScreenshot)element).getScreenshotAs(OutputType.FILE);
 		
