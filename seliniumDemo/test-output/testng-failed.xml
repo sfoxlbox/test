@@ -5,12 +5,8 @@
     <classes>
       <class name="testNG.testing">
         <methods>
-          <include name="login"/>
-          <include name="closebrowser"/>
-          <include name="launchBrowser"/>
-          <include name="enterURL"/>
+          <include name="test1"/>
           <include name="gmaillogin2"/>
-          <include name="logout"/>
           <include name="deletecookies"/>
           <include name="setup"/>
         </methods>
