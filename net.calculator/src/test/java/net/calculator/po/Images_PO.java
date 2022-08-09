@@ -31,7 +31,7 @@ WebDriver driver;
 		
 		for (int x =1; x<5;x++)
 		{
-		WebElement images = driver.findElement(By.xpath("//body[1]/div[4]/div[1]/table[1]/tbody[1]/tr[1]/td["+x+"]/div[1]/a"));
+		WebElement images = driver.findElement(By.xpath("//body/div[4]/div/table/tbody/tr/td["+x+"]/div/a"));
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOf(images));
 		Actions action = new Actions(driver);

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-09T15:57:57 EDT" name="Default suite" finished-at="2022-08-09T15:58:09 EDT" duration-ms="11860">
+  <suite started-at="2022-08-09T19:37:19 EDT" name="Default suite" finished-at="2022-08-09T19:37:32 EDT" duration-ms="12864">
     <groups>
     </groups>
-    <test started-at="2022-08-09T15:57:57 EDT" name="Default test" finished-at="2022-08-09T15:58:09 EDT" duration-ms="11860">
-      <class name="net.calculator.Test.Unspashed_2_Test">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.Unspashed_2_Test@294425a7]" started-at="2022-08-09T15:57:57 EDT" name="Setup" finished-at="2022-08-09T15:58:02 EDT" duration-ms="4745" status="PASS">
+    <test started-at="2022-08-09T19:37:19 EDT" name="Default test" finished-at="2022-08-09T19:37:32 EDT" duration-ms="12864">
+      <class name="net.calculator.Test.ImagesTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.ImagesTest@294425a7]" started-at="2022-08-09T19:37:19 EDT" name="Setup" finished-at="2022-08-09T19:37:22 EDT" duration-ms="3073" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="Test()[pri:0, instance:net.calculator.Test.Unspashed_2_Test@294425a7]" started-at="2022-08-09T15:58:02 EDT" name="Test" finished-at="2022-08-09T15:58:05 EDT" duration-ms="2793" status="PASS">
+        <test-method signature="Test_Images()[pri:0, instance:net.calculator.Test.ImagesTest@294425a7]" started-at="2022-08-09T19:37:22 EDT" name="Test_Images" finished-at="2022-08-09T19:37:31 EDT" duration-ms="9176" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.Unspashed_2_Test@294425a7]" started-at="2022-08-09T15:58:05 EDT" name="TearDown" finished-at="2022-08-09T15:58:09 EDT" duration-ms="4279" status="PASS">
+        </test-method> <!-- Test_Images -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.ImagesTest@294425a7]" started-at="2022-08-09T19:37:31 EDT" name="TearDown" finished-at="2022-08-09T19:37:32 EDT" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- net.calculator.Test.Unspashed_2_Test -->
+      </class> <!-- net.calculator.Test.ImagesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
