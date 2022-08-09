@@ -50,7 +50,7 @@ WebDriver driver;
 		break;
 		case 4 : text ="Other Calculators";
 		break;
-		default: text = "fix"; 
+		default: text = "fix it"; 
 		}
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tbody/tr[1]/td["+x+"]/div[1]/a[1]/img[1]")));
 		sa.assertEquals(logo.isDisplayed(), true);
