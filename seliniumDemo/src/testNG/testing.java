@@ -78,15 +78,15 @@ public class testing {
 	public void gtest2() throws IOException, InterruptedException {
 		System.out.println("Gmail login 1");
 		driver.navigate().to("https://www.perfectvape.com/");
-		Thread.sleep(2000);
+		Thread.sleep(800);
 		String handler = driver.getCurrentUrl();
 		System.out.println(handler);
 		
 		driver.findElement(By.cssSelector("#ac-ag-accept-button-text")).click();
-		Thread.sleep(2000);
+		Thread.sleep(800);
 		//File srcFile3 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
-		Thread.sleep(2000);
+		Thread.sleep(800);
 		WebElement element  = driver.findElement(By.cssSelector("img[class='header-logo-image']"));
 		//File srcFile4 = ((TakesScreenshot)element).getScreenshotAs(OutputType.FILE);
 		
@@ -117,13 +117,13 @@ public class testing {
 		js.executeScript("arguments[0].click();", clickBtn2);
 		action.moveByOffset(200, 200).release(clickBtn2);
 		System.out.println(clickBtn2.getText());
-		Thread.sleep(4000);
+		Thread.sleep(800);
 		driver.findElement(By.cssSelector("#topOfPage > div.body > div.container > div > main > div.papaSupermarket-categoryPage-description > p > img"));
 		js.executeScript("window.scrollBy(0,250)", "");
 		WebElement element3  = driver.findElement(By.cssSelector("img[class='__mce_add_custom__']"));
 		//File srcFile6 = ((TakesScreenshot)element3).getScreenshotAs(OutputType.FILE);
 		//Thread.sleep(4000);
-		Thread.sleep(2000);
+		Thread.sleep(800);
 		//FileUtils.copyFile(srcFile6, new File(".//C:/seliniumDemo/test-output"));
 		
 		driver.findElement(By.cssSelector(".emthemesModez-productsFilter:nth-child(1) > #emthemesModez-productsFilter-form #limit"));
@@ -135,26 +135,26 @@ public class testing {
 		//Thread.sleep(4000);
 		
         
-		Thread.sleep(2000);
+		Thread.sleep(800);
 		
 		js.executeScript("window.scrollBy(0,400)", "");
 		//WebElement clickBtn4 =driver.findElement(By.cssSelector("#form-select > option : nth-of-type(3)"));
 		// #categories>li:nth-of-type(3
 		//js.executeScript("arguments[0].click();", clickBtn4);
 		
-		Thread.sleep(2000);
+		Thread.sleep(800);
 		
 		System.out.println(handler);
 		
-	    Thread.sleep(2000);	
+	    Thread.sleep(800);	
 	    js.executeScript("window.scrollBy(0,-400)", "");
-		Thread.sleep(2000);
+		Thread.sleep(800);
 		String handler3 = driver.getCurrentUrl();
 		System.out.println(handler3);
 		driver.get(driver.getCurrentUrl());
 		   
 	    //m2.menu();
-		Thread.sleep(2000);
+		Thread.sleep(800);
 	}
 	@Test (priority = 3)
 	public void gmaillogin2()  throws InterruptedException, IOException {
@@ -170,35 +170,33 @@ public class testing {
 		//Performing the mouse hover action on the target element.
 	
 		action2.moveToElement(x1).build().perform();
-		Thread.sleep(5000);
+		Thread.sleep(800);
 		WebElement DadDrip =driver.findElement(By.cssSelector("#navPages-218-sidebar > li:nth-child(3) > a"));
 		js.executeScript("arguments[0].click();", DadDrip);
-		Thread.sleep(4000);
 		
-		Thread.sleep(4000);
 		driver.navigate().back();
 		
 		action.moveToElement(x1).release(x1);
 		
 		js.executeScript("window.scrollBy(0,300)", "");
 		js.executeScript("window.scrollBy(0,300)", "");
-		Thread.sleep(4000);
-		WebElement clickBtn6 = driver.findElement(By.linkText("Cloud Nurdz Disposables 3500 Puffs"));
+		Thread.sleep(1000);
+		WebElement clickBtn6 = driver.findElement(By.linkText("Cloud Nurdz Disposables 4500 Puffs"));
 		js.executeScript("arguments[0].click();", clickBtn6);
 		for ( int y =0; y < 2; y++) {
 			js.executeScript("window.scrollBy(0,200)", "");
-			Thread.sleep(1000);
+			Thread.sleep(800);
 		}
 		
 		
-		Thread.sleep(4000);
+		Thread.sleep(800);
 		js.executeScript("window.scrollBy(0,100)", "");
 		js.executeScript("window.scrollBy(0,200)", "");
 		
 		WebElement clickBtn7 = driver.findElement(By.cssSelector("#topOfPage > div.body > div.container > div > main > div.productView-scope > div.productView.productView--full > div.productView-detailsWrapper > div.productView-beforeAlsoBought > section:nth-child(3) > div.productView-options.productView-options--1col > form.form.form--addToCart > div.emthemesModez-productView-optionsGrid > div > div > label:nth-child(3)"));
 		js.executeScript("window.scrollBy(0,600)", "");
 		js.executeScript("arguments[0].click();", clickBtn7);
-		Thread.sleep(6000);
+		Thread.sleep(800);
 		WebElement clickBtn8 = driver.findElement(By.cssSelector("#topOfPage > div.body > div.container > div > main > div.productView-scope > div.productView.productView--full > div.productView-detailsWrapper > div.productView-beforeAlsoBought > section:nth-child(3) > div.productView-options.productView-options--1col > form.form.form--addToCart > div.form-field.form-field--increments > div > button:nth-child(3)"));
 		js.executeScript("arguments[0].click();", clickBtn8);
 		Thread.sleep(500);
@@ -214,10 +212,10 @@ public class testing {
         System.out.println("add to card");
         driver.getWindowHandle();
         
-        Thread.sleep(4000);
+        Thread.sleep(800);
         System.out.println("checking cart");
         // cart.checkcart();
-		Thread.sleep(4000);
+		Thread.sleep(800);
 		 System.out.println("input name hype");
 		driver.findElement(By.cssSelector("#search_query")).sendKeys("hyde");
 		 System.out.println("click search ");
