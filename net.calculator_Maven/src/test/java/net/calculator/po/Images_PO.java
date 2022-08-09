@@ -10,6 +10,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 public class Images_PO {
@@ -33,6 +35,7 @@ WebDriver driver;
 		
 		WebElement logo = driver.findElement(By.xpath("//tbody/tr[1]/td["+x+"]/div[1]/a[1]/img[1]"));
 		//Thread.sleep(1000);
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 		Actions action = new Actions(driver);
 		SoftAssert sa = new SoftAssert();
 		
@@ -49,7 +52,7 @@ WebDriver driver;
 		break;
 		default: text = "fix"; 
 		}
-		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tbody/tr[1]/td["+x+"]/div[1]/a[1]/img[1]")));
 		sa.assertEquals(logo.isDisplayed(), true);
 		System.out.println("Logo "+x+ " is Asserted");
 		if (link != null) {
