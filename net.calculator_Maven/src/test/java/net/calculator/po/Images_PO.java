@@ -34,10 +34,11 @@ WebDriver driver;
 		WebElement link = driver.findElement(By.xpath("//table/tbody/tr/td[\"+x+\"]/div[1]/a"));
 		
 		WebElement logo = driver.findElement(By.tagName("img"));
-		//Thread.sleep(1000);
+
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 		Actions action = new Actions(driver);
 		SoftAssert sa = new SoftAssert();
+		
 		
 		action.sendKeys(Keys.F5);
 		String text;
