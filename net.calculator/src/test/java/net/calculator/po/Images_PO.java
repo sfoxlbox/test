@@ -27,12 +27,13 @@ WebDriver driver;
 	
 	public void images() throws InterruptedException
 	{
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		
 		
 		for (int x =1; x<5;x++)
 		{
-		WebElement images = driver.findElement(By.xpath("//body/div[4]/div/table/tbody/tr/td["+x+"]/div/a"));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebElement images = driver.findElement(By.xpath("//body/div[4]/div/table/tbody/tr/td["+x+"]/div/a"));
 		wait.until(ExpectedConditions.visibilityOf(images));
 		Actions action = new Actions(driver);
 		
