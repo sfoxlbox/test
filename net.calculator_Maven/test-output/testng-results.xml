@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-10T14:45:26 EDT" name="Default suite" finished-at="2022-08-10T14:46:00 EDT" duration-ms="34168">
+  <suite started-at="2022-08-10T16:03:45 EDT" name="Default suite" finished-at="2022-08-10T16:04:38 EDT" duration-ms="53228">
     <groups>
     </groups>
-    <test started-at="2022-08-10T14:45:26 EDT" name="Default test" finished-at="2022-08-10T14:46:00 EDT" duration-ms="34168">
+    <test started-at="2022-08-10T16:03:45 EDT" name="Default test" finished-at="2022-08-10T16:04:38 EDT" duration-ms="53228">
       <class name="net.calculator.Test.Unsplash_Test">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.Unsplash_Test@294425a7]" started-at="2022-08-10T14:45:26 EDT" name="Setup" finished-at="2022-08-10T14:45:30 EDT" duration-ms="4130" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.Unsplash_Test@294425a7]" started-at="2022-08-10T16:03:45 EDT" name="Setup" finished-at="2022-08-10T16:03:51 EDT" duration-ms="5704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="Test()[pri:0, instance:net.calculator.Test.Unsplash_Test@294425a7]" started-at="2022-08-10T14:45:30 EDT" name="Test" finished-at="2022-08-10T14:45:59 EDT" duration-ms="29123" status="PASS">
+        <test-method signature="Test()[pri:0, instance:net.calculator.Test.Unsplash_Test@294425a7]" started-at="2022-08-10T16:03:51 EDT" name="Test" finished-at="2022-08-10T16:04:35 EDT" duration-ms="44872" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.Unsplash_Test@294425a7]" started-at="2022-08-10T14:45:59 EDT" name="TearDown" finished-at="2022-08-10T14:46:00 EDT" duration-ms="872" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.Unsplash_Test@294425a7]" started-at="2022-08-10T16:04:35 EDT" name="TearDown" finished-at="2022-08-10T16:04:38 EDT" duration-ms="2572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
