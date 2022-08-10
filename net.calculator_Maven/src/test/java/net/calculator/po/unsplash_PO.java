@@ -40,7 +40,7 @@ WebDriver driver;
 		//JavascriptExecutor js = (JavascriptExecutor)driver;
 		
 		Actions action = new Actions(driver);
-		
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		//Title.click();
 		//Thread.sleep(2000);
 		//action.moveToElement(gotit).click().perform();

@@ -28,7 +28,7 @@ WebDriver driver;
 		
 		//Actions action = new Actions(driver);
 		 List<WebElement> elements = driver.findElements(By.tagName("a"));
-		 List<WebElement> elements2 = driver.findElements(By.xpath("//a[contains(text(),' ')]"));
+		
 		    
 		    System.out.println("Number of elements:" + elements.size());
 		for ( WebElement e : elements) {
