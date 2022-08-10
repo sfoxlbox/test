@@ -16,6 +16,7 @@ WebDriver driver;
 	{
 		driver = setproperty();
 		driver.get("https://www.calculator.net/");
+		
 	}
 	@Test
 	public void Test_Images() throws InterruptedException 
