@@ -1,25 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-09T19:42:16 EDT" name="Default suite" finished-at="2022-08-09T19:42:30 EDT" duration-ms="13368">
+  <suite started-at="2022-08-10T13:08:17 EDT" name="Default suite" finished-at="2022-08-10T13:16:17 EDT" duration-ms="480315">
     <groups>
     </groups>
-    <test started-at="2022-08-09T19:42:16 EDT" name="Default test" finished-at="2022-08-09T19:42:30 EDT" duration-ms="13368">
-      <class name="net.calculator.Test.ImagesTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.ImagesTest@294425a7]" started-at="2022-08-09T19:42:16 EDT" name="Setup" finished-at="2022-08-09T19:42:20 EDT" duration-ms="3411" status="PASS">
+    <test started-at="2022-08-10T13:08:17 EDT" name="Default test" finished-at="2022-08-10T13:16:17 EDT" duration-ms="480315">
+      <class name="net.calculator.Test.Main_Test">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:08:17 EDT" name="Setup" finished-at="2022-08-10T13:08:20 EDT" duration-ms="3411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="Test_Images()[pri:0, instance:net.calculator.Test.ImagesTest@294425a7]" started-at="2022-08-09T19:42:20 EDT" name="Test_Images" finished-at="2022-08-09T19:42:29 EDT" duration-ms="9428" status="PASS">
+        <test-method signature="Test_calculator()[pri:1, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:08:20 EDT" name="Test_calculator" finished-at="2022-08-10T13:08:25 EDT" duration-ms="4512" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test_Images -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.ImagesTest@294425a7]" started-at="2022-08-09T19:42:29 EDT" name="TearDown" finished-at="2022-08-09T19:42:30 EDT" duration-ms="456" status="PASS">
+        </test-method> <!-- Test_calculator -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:08:25 EDT" name="TearDown" finished-at="2022-08-10T13:08:25 EDT" duration-ms="344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- net.calculator.Test.ImagesTest -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:08:25 EDT" name="Setup" finished-at="2022-08-10T13:08:27 EDT" duration-ms="1886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Test_Images()[pri:2, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:08:27 EDT" name="Test_Images" finished-at="2022-08-10T13:08:38 EDT" duration-ms="10818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Images -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:08:38 EDT" name="TearDown" finished-at="2022-08-10T13:08:39 EDT" duration-ms="1136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:08:39 EDT" name="Setup" finished-at="2022-08-10T13:08:41 EDT" duration-ms="2155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Test_Financial()[pri:4, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:08:41 EDT" name="Test_Financial" finished-at="2022-08-10T13:10:04 EDT" duration-ms="82365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Financial -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:10:04 EDT" name="TearDown" finished-at="2022-08-10T13:10:05 EDT" duration-ms="1909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:10:05 EDT" name="Setup" finished-at="2022-08-10T13:10:08 EDT" duration-ms="2518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Test_Fitness()[pri:4, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:10:08 EDT" name="Test_Fitness" finished-at="2022-08-10T13:10:33 EDT" duration-ms="25302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Fitness -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:10:33 EDT" name="TearDown" finished-at="2022-08-10T13:10:35 EDT" duration-ms="1933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:10:35 EDT" name="Setup" finished-at="2022-08-10T13:10:38 EDT" duration-ms="2823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Test_Finanial_Main()[pri:5, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:10:38 EDT" name="Test_Finanial_Main" finished-at="2022-08-10T13:14:30 EDT" duration-ms="232172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Finanial_Main -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:14:30 EDT" name="TearDown" finished-at="2022-08-10T13:14:32 EDT" duration-ms="1489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:14:32 EDT" name="Setup" finished-at="2022-08-10T13:14:34 EDT" duration-ms="2528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Test_Math()[pri:6, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:14:34 EDT" name="Test_Math" finished-at="2022-08-10T13:14:55 EDT" duration-ms="20632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Math -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:14:55 EDT" name="TearDown" finished-at="2022-08-10T13:15:00 EDT" duration-ms="5005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:15:00 EDT" name="Setup" finished-at="2022-08-10T13:15:03 EDT" duration-ms="3112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Test_Other()[pri:7, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:15:03 EDT" name="Test_Other" finished-at="2022-08-10T13:15:15 EDT" duration-ms="12272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Other -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:15:15 EDT" name="TearDown" finished-at="2022-08-10T13:15:16 EDT" duration-ms="606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:15:16 EDT" name="Setup" finished-at="2022-08-10T13:15:19 EDT" duration-ms="2913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Test_Mortgage()[pri:8, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:15:19 EDT" name="Test_Mortgage" finished-at="2022-08-10T13:15:36 EDT" duration-ms="16895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Mortgage -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:15:36 EDT" name="TearDown" finished-at="2022-08-10T13:15:36 EDT" duration-ms="532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:15:36 EDT" name="Setup" finished-at="2022-08-10T13:15:39 EDT" duration-ms="2280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Test_Least_Common_Multiple()[pri:9, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:15:39 EDT" name="Test_Least_Common_Multiple" finished-at="2022-08-10T13:15:51 EDT" duration-ms="12707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Least_Common_Multiple -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:15:51 EDT" name="TearDown" finished-at="2022-08-10T13:15:52 EDT" duration-ms="645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:15:52 EDT" name="Setup" finished-at="2022-08-10T13:15:54 EDT" duration-ms="2330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Test_Virtual_Dice_Roller()[pri:10, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:15:54 EDT" name="Test_Virtual_Dice_Roller" finished-at="2022-08-10T13:16:12 EDT" duration-ms="18165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Virtual_Dice_Roller -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:net.calculator.Test.Main_Test@6572421]" started-at="2022-08-10T13:16:12 EDT" name="TearDown" finished-at="2022-08-10T13:16:17 EDT" duration-ms="4797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- net.calculator.Test.Main_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
