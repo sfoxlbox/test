@@ -32,14 +32,14 @@ import org.openqa.selenium.support.PageFactory;
 		   if(e.getText() != "") {
 			   h_set.add(e.getText());
 			   map.put(e.getAccessibleName(), e.getText());
-			   //System.out.println(e.getText()); 
+			   System.out.println(e.getText()); 
 		   }
 	   }
 	   
 	   h_set.toArray(array);
 	   for(int x = 0; x< h_set.size(); x++)
 	   {
-		   System.out.println(array[x]);
+		   //System.out.println(array[x]);
 	   }
 	   System.out.println(h_set.size()); 
 	   for (String i : map.keySet()) { // get they values
